@@ -1,8 +1,10 @@
-wrapper {
+.wrapper {
   min-height: 100%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto;
 }
+
+
 
 /*used to test if there is a border overlap on navbar and footer section to cause crash*/
 /*#navbar,#footer,#maincontent{
@@ -20,9 +22,8 @@ wrapper {
     padding-left: 35%;
 }
 
-/*Update the navbar section font family as Youtube San */
-#navbar{
-
+/*Update the topnavbar section font family as Youtube San */
+#topnavbar{
     font-family: 'Pathway Gothic One', sans-serif;
     /*padding-left:1rem;*/
     font-size:2rem;
