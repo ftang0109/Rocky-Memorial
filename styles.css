@@ -95,11 +95,20 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     font-style: italic;
 }
 
-/*#memorial-picture{
+#memorial-picture{
 
     width:400px; 
     height:500px;
-}*/
+}
+
+@media (max-width: 500px){
+
+    #memorial-picture{
+
+        width:300px; 
+    }
+  
+  }
 
 
 /*setup the font family for foot nav link*/
