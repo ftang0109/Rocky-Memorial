@@ -1,0 +1,112 @@
+/* Update the nav bar css background color */
+.rocky-bg-body-tertiary {
+    background-color: rgba(146,121,80,255);
+}
+
+/* Update the nav item horizontal alignment*/
+.navbar-nav {
+
+    padding-left: 35%;
+}
+
+/*Update the navbar section font family as Youtube San */
+#navbar{
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding-left:1rem;
+    font-size:2rem;
+    font-weight:600;
+    
+}
+
+/*update the default font color for top nav links */
+.nav-link{
+
+    /*color: #000036; */
+    color:#FFFFFF;
+    
+}
+
+/*update the default font color for top nav links when hover */
+.nav-link:hover{
+    /*color:#0000fa;*/
+    color:#cbbba0;
+    text-shadow: 2px 2px 1px black;
+    
+}
+
+/*update the default font color for top nav links when this active*/
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+   /*color: #000022;*/
+   color: #392f1f;
+   font-weight: bold;
+}
+
+/*change the nav-bar toggler button border color*/
+.navbar-toggler {
+
+    border: var(--bs-border-width) solid #392f1f;
+}
+
+/*change the nav-bar toggle button icon*/
+.navbar-toggler-icon{
+
+width: 1.5em;
+height: 1.5em;
+
+background-image: url("./images/icon/black_dog_paw_icon.png");
+
+}
+
+/*Add top left header logo*/
+.navbar-header-logo{
+
+    height:80px;
+    width:80px;
+    margin: 10px;
+}
+
+/* enlarge logo if there is mouse over-no need anymore since have found a better workaround*/
+/*
+.enlargelogo{
+    height:100px;
+    width:100px;
+    margin:0px;
+    transition-duration: .1s;
+    
+}*/
+
+/* Memorial text front used in home landing page */
+.memorialtext{
+
+    font-family: "Luxurious Roman", serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+/*setup the font family for foot nav link*/
+#footer .nav-link{
+
+    font-family: 'Pathway Gothic One', sans-serif;
+    padding-left:1rem;
+    font-size:2rem;
+    font-weight:300;
+
+}
+
+/* For footer active link setting */
+#footer .nav-link.active {
+    /*color: #000022;*/
+    color: #392f1f;
+    font-weight: bold;
+ }
+
+ /* make the footer p to have padding left*/
+ #footer p{
+
+    padding-left: 5rem;
+    color:#FFFFFF;
+    font-size:1rem;
+    font-weight: bold;
+ }
+
