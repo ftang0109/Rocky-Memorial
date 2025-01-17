@@ -4,6 +4,11 @@
   grid-template-rows: auto;
 }
 
+/* always make top nav bar section stick to top while user scrolling through content*/
+#topnavbar { 
+    position: sticky; 
+    top:0;
+} 
 
 
 /*used to test if there is a border overlap on navbar and footer section to cause crash*/
