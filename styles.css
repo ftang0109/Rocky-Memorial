@@ -1,3 +1,14 @@
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/*used to test if there is a border overlap on navbar and footer section to cause crash*/
+#navbar,#footer{
+    background-color: red;
+}
+
 /* Update the nav bar css background color */
 .rocky-bg-body-tertiary {
     background-color: rgba(146,121,80,255);
@@ -13,7 +24,7 @@
 #navbar{
 
     font-family: 'Pathway Gothic One', sans-serif;
-    padding-left:1rem;
+    /*padding-left:1rem;*/
     font-size:2rem;
     font-weight:600;
     
@@ -83,6 +94,13 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     font-weight: 800;
     font-style: italic;
 }
+
+/*#memorial-picture{
+
+    width:400px; 
+    height:500px;
+}*/
+
 
 /*setup the font family for foot nav link*/
 #footer .nav-link{
