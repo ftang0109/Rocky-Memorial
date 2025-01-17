@@ -127,6 +127,15 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     margin-right: 0;
 }
 
+
+/*adjust the css if screen is less than 770 px width*/
+@media (max-width: 770px){
+    .navbar-nav{
+
+        padding-left: 10%;
+    }
+}
+
 /*adjust the css if screen is less than 500 px width*/
 @media (max-width: 500px){
 
@@ -141,6 +150,8 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
           
     }
 }
+
+
 
 
 
