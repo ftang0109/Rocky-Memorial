@@ -8,11 +8,10 @@
 #topnavbar { 
     position: sticky; 
     top:0;
-} 
+}
 
-
-/*used to test if there is a border overlap on navbar and footer section to cause crash*/
-/*#navbar,#footer,#maincontent{
+/*used to test if there is a border overlap on navbar,main content, footer section to cause crash*/
+/* #navbar,#footer,#maincontent{
     background-color: red;
 }*/
 
@@ -131,6 +130,35 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     margin-left: 0;
     margin-right: 0;
 }
+
+/* some carousel css adjustment below */
+
+.carousel-custom-masterout{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-custom-outer {
+
+    /*set it as 60% of windows size*/
+    /*border: 1px solid black; this CSS would be use for troubleshooting
+    Also, don't ever change any related to class .carousel-item that one is related to animate and swap picture purpose.
+    */ 
+    display:block;
+}
+
+
+
+.carousel-item img{
+/* orginally set:300 x 500 px*/    
+    width: 300px; /* set as 100% of outer */
+    height: 500px;
+    /*border: 1px solid red;*/
+}
+
 
 
 /*adjust the css if screen is less than 770 px width*/
