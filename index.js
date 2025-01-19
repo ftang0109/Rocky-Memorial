@@ -30,3 +30,50 @@ $(".navbar-header-logo").on("mouseleave",function(){
 
 
 
+
+
+//Carousel Pop up modal section.
+
+/*When windows is resized, the carousel modal position need to be updated*/
+
+$(window).on('resize', function(){
+  console.log("current x position: "+ $(".carousel-inner").offset().left);
+  console.log("current y position: "+ $(".carousel-inner").offset().top);
+
+  if($("#carouselphotomodal").css('display') != 'none'){
+
+    $("#carouselphotomodal").css({
+      top: $(".carousel-inner").offset().top-10,
+      left:$(".carousel-inner").offset().left-10
+    });
+ 
+  }
+});
+
+
+/*initial placement of carousel modal when user on the active picture*/
+
+$(".carousel-inner img").on("click", function() {
+  
+
+ //retrieve the active click image url first
+ var activeimage=$(".carousel-item.active img").attr("src");
+ 
+ //change the background image of model to active image.
+ $("#carouselphotomodal").css({"background-image": "url("+ activeimage + ")"});  
+
+  $("#carouselphotomodal").css({
+      top: $(".carousel-inner").offset().top-10,
+      left:$(".carousel-inner").offset().left-10
+  });
+  
+  $("#carouselphotomodal").css("display","block");
+  
+});
+
+/* click on the carousel model would close it*/
+
+$("#carouselphotomodal").on('click', function() {
+  $("#carouselphotomodal").css("display","");
+});
+

@@ -159,10 +159,20 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     /*border: 1px solid red;*/
 }
 
-/*.carousel-item img:hover {
-    
-    transform: scale(1.2);
-}*/
+#carouselphotomodal{
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 520px;
+    z-index:6;
+    background-image: url('./images/carousel/2.jpg');
+    background-size: 320px 520px; /*used to specify background image size*/
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
 
 
 
