@@ -137,8 +137,8 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     display:flex;
     width:100%;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 3.25rem;
+    margin-bottom: 3.25rem;
 }
 
 .carousel-custom-outer {
@@ -159,9 +159,14 @@ background-image: url("./images/icon/black_dog_paw_icon.png");
     /*border: 1px solid red;*/
 }
 
+/*.carousel-item img:hover {
+    
+    transform: scale(1.2);
+}*/
 
 
-/*adjust the css if screen is less than 770 px width*/
+
+/*adjust the css if screen is less than 770 px width to fix certain iphone screen issue e.g. iphone SE.*/
 @media (max-width: 770px){
     .navbar-nav{
 
